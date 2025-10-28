@@ -1,0 +1,152 @@
+.welcome {
+  background-color: var(--bg-primary);
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome h1 {
+  text-align: center;
+}
+
+.welcome h2 {
+  text-align: center;
+  color: var(--text-light);
+}
+
+.welcome h2 span {
+  color: rgb(57, 226, 136);
+}
+
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 32px;
+  }
+}
+
+.course-details {
+  display: flex;
+  margin-top: var(--spacing-large);
+  gap: var(--spacing-medium);
+}
+
+.course-img {
+  width: 30%;
+  margin-right: var(--spacing-medium);
+  margin-top: calc(3 * var(--spacing-large));
+}
+
+.course-img img {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-large);
+}
+
+.course-content {
+  width: 70%;
+  font-size: var(--fs-medium);
+  color: var(--text-primary);
+}
+
+.course-content ul {
+  list-style-type: circle;
+  margin: var(--spacing-medium);
+}
+
+.course-content p:first-of-type {
+  margin-bottom: var(--spacing-medium);
+}
+
+@media (max-width: 768px) {
+  .course-details,
+  .video {
+    flex-direction: column;
+  }
+
+  .course-img,
+  .course-content,
+  iframe {
+    width: 100%;
+  }
+
+  .course-img img {
+    margin-bottom: var(--spacing-medium);
+  }
+
+  .course-img {
+    margin-top: var(--spacing-medium);
+  }
+}
+
+.certification .microsoft-logo {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.course-content .content h3 {
+  text-align: center;
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+  color: var(--text-dark);
+}
+
+.course-content p:nth-of-type(2) {
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: var(--fs-large);
+}
+
+.video h3 {
+  font-weight: 100;
+  text-align: center;
+  padding: 5px 10px;
+  color: var(--text-light);
+}
+
+.video .title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--spacing-large);
+  border: 1px solid var(--bg-primary);
+  border-radius: 10px;
+  background-color: var(--bg-primary);
+  height: 200px;
+  align-self: center;
+}
+
+.video .title-wrapper h3:hover {
+  color: var(--text-secondary);
+}
+.video {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-large);
+}
+
+.enrollment a {
+  display: inline;
+  color: var(--text-secondary);
+}
+
+.enrollment p {
+  font-size: var(--fs-large);
+  margin-top: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+  text-align: center;
+}
+
+.course-content .card {
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+  border-radius: 1px solid var(--bg-primary);
+  background-color: var(--bg-secondary);
+  padding: 10px;
+  color: var(--text-dark);
+}
+
+.card .details .material-symbols-outlined {
+  vertical-align: middle;
+}

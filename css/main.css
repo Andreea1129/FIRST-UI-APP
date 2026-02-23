@@ -6,14 +6,14 @@
   --text-light: #eaeaea;
   --text-white: #ffffff;
 
-  --bg-primary: #141e4c;
+  --bg-primary: #01013f;
   --bg-secondary: #dfedf5;
-  --bg-dark: #101d42;
+  --bg-dark: #141042;
   --bg-light: #ffffff;
 
   --button-color: #2bb686;
 
-  --fs-large: 16px;
+  --fs-large: 18px;
   --fs-medium: 14px;
   --fs-small: 12px;
 
@@ -122,14 +122,13 @@ nav .container {
 }
 
 nav .arrow-down-icon {
-  /* Daca nu specificam top, left, right sau bottom, elementul cu position absolute va fi pozitionat automat, iar in acest caz il pozitioneaza fix cum trebuie */
   position: absolute;
   font-size: var(--fs-large);
 }
+
 nav a {
   color: var(--text-light);
   font-size: var(--fs-small);
-  /* Transformam textul in majuscule */
   text-transform: uppercase;
   padding: var(--spacing-medium);
 }
@@ -176,7 +175,7 @@ nav .submenu a {
   padding: var(--spacing-tiny) var(--spacing-small);
 }
 
-/* Stilizarea pentru mobile pentru navigatie */
+/* Stilizarea mobile pentru navigatie */
 @media (max-width: 768px) {
   nav img {
     height: var(--mobile-logo-height);
@@ -207,7 +206,7 @@ nav .submenu a {
     /* schimbam modul de afisare a cursorului  */
     cursor: pointer;
   }
-  /* input:checked ~ u; -> inseamna ca aplica css-ul doar pentru fratii de tip ul de pe acelasi nivel cu input-ul */
+  /* input:checked ~ ul -> inseamna ca aplica css-ul doar pentru fratii de tip ul de pe acelasi nivel cu input-ul */
   nav input[type="checkbox"]:checked ~ ul {
     display: block;
     width: 100%;
@@ -232,6 +231,6 @@ footer {
 footer p {
   color: var(--text-light);
   text-align: center;
-  font-size: var(--fs-small);
+  font-size: var(--fs-medium);
   padding: var(--spacing-medium) 0;
 }

@@ -361,8 +361,6 @@
   transform: scale(2);
 }
 
-footer p,
 footer a {
-  font-size: var(--fs-medium);
   color: var(--text-white);
 }

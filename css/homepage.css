@@ -222,6 +222,111 @@
     width: 100%;
   }
 }
+/* Stilizare sectiune Testimoniale */
+.testimoniale h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+.testimoniale .absolvent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: var(--spacing-large);
+}
+
+.testimoniale .absolvent-wrapper {
+  width: 22%;
+  padding-right: var(--spacing-small);
+  padding-left: var(--spacing-small);
+  margin-bottom: var(--spacing-large);
+}
+
+.testimoniale .absolvent-wrapper h4,
+.testimoniale .absolvent-wrapper h5 {
+  color: var(--text-primary);
+}
+.testimoniale .absolvent {
+  width: 100%;
+  height: 550px;
+  padding: var(--spacing-tiny);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding-top: 50px;
+  margin-top: calc(3 * var(--spacing-large));
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.testimoniale .container.grid {
+  padding: var(--spacing-small);
+}
+
+.testimoniale .absolvent .presentation-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: -70px;
+  filter: grayscale(100%);
+}
+
+.testimoniale h3 {
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.9;
+  text-align: center;
+  font-size: var(--fs-large);
+  font-weight: 100;
+  padding: var(--spacing-small);
+  margin-top: var(--spacing-small);
+}
+
+.testimoniale h3,
+.testimoniale .description {
+  margin-bottom: var(--spacing-medium);
+}
+
+.testimoniale .content {
+  padding: 0 var(--spacing-small);
+}
+
+@media (max-width: 992px) {
+  .testimoniale .absolvent-wrapper {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimoniale .absolvent-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimoniale .absolvent-wrapper {
+    width: 100%;
+  }
+  .testimoniale .absolvent {
+    height: 300px;
+  }
+}
+
+@media (max-width: 460px) {
+  .testimoniale .absolvent {
+    height: 400px;
+  }
+}
+
+@media (min-width: 985px) and (max-width: 1195px) {
+  .testimoniale .absolvent {
+    height: 470px;
+  }
+}
 
 /* Stilizare sectiune Parteneri */
 .partners h2 {
@@ -250,10 +355,14 @@
 .partners img {
   width: 100%;
   height: auto;
-  filter: grayscale(100%);
 }
 
 .partners img:hover {
-  filter: grayscale(0);
   transform: scale(2);
+}
+
+footer p,
+footer a {
+  font-size: var(--fs-medium);
+  color: var(--text-white);
 }

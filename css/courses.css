@@ -18,6 +18,7 @@
 
 .courses .container.grid p.main-paragraph {
   padding: var(--spacing-medium) var(--spacing-small);
+  font-size: var(--fs-large);
 }
 
 .courses .container.grid p.main-paragraph {
@@ -59,16 +60,24 @@
   width: 100%;
   height: auto;
   margin-bottom: var(--spacing-large);
+  height: 200px;
 }
 
 .courses h3 {
   color: var(--text-primary);
 }
 
-.courses .microsoft-logo {
+.courses .microsoft-logo, .courses .minister-color-logo{
   width: 80px;
   height: auto;
   vertical-align: middle;
+  margin-right:var(--spacing-tiny);
+}
+.courses .adobe-logo, .courses .apple-logo{
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+  margin-right:var(--spacing-tiny);
 }
 
 .courses span,
@@ -103,16 +112,18 @@
   width: 100px;
 }
 
+.courses a:hover{
+  opacity: 90%;
+}
+
 .courses .microsoft-logo,
+.courses .adobe-logo,
+.courses .apple-logo,
 .courses .duration-months,
 .courses .duration-hours {
   margin-left: var(--spacing-small);
 }
 
-.course-wrapper .course .presentation-image {
-  height: 200px;
-  filter: grayscale(100%);
-}
 @media (max-width: 992px) {
   .courses .course-wrapper {
     width: 50%;

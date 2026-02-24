@@ -257,6 +257,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: var(--bg-secondary);
 }
 
 .testimoniale .container.grid {
@@ -269,7 +270,6 @@
   border-radius: 50%;
   position: absolute;
   top: -70px;
-  filter: grayscale(100%);
 }
 
 .testimoniale h3 {

@@ -10,36 +10,6 @@
   text-align: center;
 }
 
-.description p{
-  text-align: center;
-  font-size: var(--fs-large);
-  margin:var(--spacing-large);
-  color:var(--text-primary);
-}
-  
-.why-our-trainers .container{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: var(--bg-secondary);
-  margin-bottom:var(--spacing-large);
-}
-
-.why-our-trainers .container .trainers-about-page{
-  width:500px;
-  height:300px;
-}
-
-.why-our-trainers h3, .why-our-trainers ul{
-  align-self: center;
-  margin:var(--spacing-large);
-}
-
-.why-our-trainers ul li{
-  font-style: italic;
-  padding: var(--spacing-small);
-}
-
 @media (max-width: 768px) {
   .welcome h1 {
     font-size: 32px;
@@ -139,4 +109,22 @@
   .trainers .trainer {
     height: 470px;
   }
+}
+
+.why-our-trainers .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--bg-secondary);
+  margin-bottom: var(--spacing-large);
+}
+
+.why-our-trainers .container .trainers-about-page {
+  width: 500px;
+  height: 300px;
+}
+
+.why-our-trainers h3,
+.why-our-trainers p {
+  margin: var(--spacing-large);
 }

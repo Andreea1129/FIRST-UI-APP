@@ -1,27 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>💻Web Development</title>
+    <title>Web Development</title>
     <!-- Adaugam meta tag-urile pentru SEO -->
     <meta
       name="description"
       content="Prima aplicatie de UI folosind doar HTML si CSS"
     />
-    <!-- Includem font-urile de la google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- Includem iconitele tot de la Google: Material Icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
       rel="stylesheet"
     />
-    <!-- Includem CSS-urile noastre -->
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="../../css/course-detail.css" />
   </head>
@@ -41,7 +38,6 @@
               <li class="about-us">
                 <a href="../about.html"
                   >Despre Noi
-                  <!-- Inseram iconita de arrow down de pe Material Icons -->
                   <span class="material-symbols-outlined arrow-down-icon">
                     arrow_drop_down
                   </span>
@@ -59,6 +55,7 @@
       </nav>
     </header>
     <main>
+      <!-- Sectiune welcome -->
       <section class="welcome">
         <div class="container">
           <h1>Web Development</h1>
@@ -68,39 +65,43 @@
           </h2>
         </div>
       </section>
-      <div class="container">
-        <section class="course-details">
-          <div class="course-img">
-            <img src="../../img/web-dev.jpeg" alt="Web Development Logo" />
-            <img
-              src="../../img/course-web-dev-page.jpg"
-              alt="Web Development"
-            />
-          </div>
+      <!-- End Sectiune welcome -->
+      <!-- Sectiune detalii curs-->
+
+      <!-- Sectiune detalii curs-->
+      <section class="course-details">
+        <div class="container">
           <div class="course-content">
-            <div class="content">
-              <h3>Web Development de la Zero la Primul Proiect</h3>
-            </div>
-            <p>
-              <i>
-                Programarea web (web development) este procesul de creare și
-                construire a aplicațiilor web și a site-urilor care rulează pe
-                internet și sunt accesate prin intermediul unui browser. Acesta
-                include utilizarea limbajelor de programare, tehnologiilor și
-                framework-urilor pentru a dezvolta funcționalitățile vizibile
-                utilizatorului (frontend) și cele din spatele scenei (backend),
-                precum și mentenanța acestora.</i
-              >
-            </p>
-            <div class="card">
-              <p class="certification">
-                Certificare:
-                <img
-                  src="../../img/microsoft-color.png"
-                  alt="Microsoft"
-                  class="microsoft-logo"
-                />
+            <div class="description">
+              <img
+                src="../../img/course-web-dev.jpg"
+                alt="Web Development"
+                class="course-img"
+              />
+              <p>
+                <i>
+                  Frontend Development este partea din web development care dă
+                  viață unei aplicații web. Este responsabilă pentru design,
+                  animații, interactivitate și experiența utilizatorului. Prin
+                  tehnologii moderne și bune practici, frontend-ul transformă
+                  ideile și conceptele vizuale în interfețe dinamice, optimizate
+                  pentru performanță și compatibilitate pe orice dispozitiv.</i
+                >
               </p>
+            </div>
+            <div class="card">
+              <div class="certification">
+                <img
+                  src="../../img/minister-color.png"
+                  alt="Ministerul Educatiei"
+                  class="minister-color-logo"
+                />
+                <img
+                  src="../../img/adobe-color.png"
+                  alt="Adobe"
+                  class="adobe-logo"
+                />
+              </div>
               <div class="details">
                 <span class="date">
                   <span class="material-symbols-outlined"> today </span>
@@ -120,83 +121,130 @@
                   <span class="material-symbols-outlined"> euro_symbol </span>
                   <span>960</span>
                 </span>
+                <h4>Ofertă de primăvară -20%</h4>
+              </div>
+              <div class="trainer">
+                <img src="../../img/razvan.jpeg" alt="Răzvan Cîrlugea" />
+                <h4>Răzvan Cîrlugea</h4>
               </div>
             </div>
-            <p>Tehnologii folosite:</p>
-            <ul>
-              <li>
-                <strong>HTML:</strong> Limbajul de marcare pentru structura
-                conținutului unei pagini web. HTML definește elementele unei
-                pagini, cum ar fi titluri, paragrafe, imagini, linkuri și
-                formulare.
-              </li>
-              <li>
-                <strong>CSS(Cascading Style Sheets):</strong> Limbajul de
-                stilizare utilizat pentru a controla aspectul vizual al
-                paginilor web. El permite dezvoltatorilor să definească culori,
-                fonturi, dimensiuni, margini, poziționarea elementelor și
-                animații, separând designul de conținutul HTML. CSS face parte
-                din tehnologiile fundamentale ale web-ului și ajută la crearea
-                unor interfețe atractive, responsive și consistente.
-              </li>
-              <li>
-                <strong>JavaScript:</strong> Limbajul de programare care adaugă
-                interactivitate și funcționalități dinamice paginilor web.
-                Javascript permite manipularea elementelor HTML, crearea de
-                animații mai complexe, validarea formularelor, comunicarea cu
-                serverul și dezvoltarea aplicațiilor web dinamice.
-              </li>
-              <li>
-                <strong>Framework-uri:</strong> Instrumente și biblioteci care
-                simplifică dezvoltarea, oferind structuri și funcții predefinite
-                pentru a accelera procesul.
-              </li>
-            </ul>
+
+            <div class="course-list">
+              <h2>Caracteristici cheie:</h2>
+              <ul>
+                <li>
+                  <strong>Crearea aplicațiilor web interactive:</strong>
+                  dezvoltarea de site-uri și aplicații accesibile din browser
+                </li>
+                <li>
+                  <strong>Interfețe moderne și responsive:</strong> design
+                  adaptat pentru desktop, tabletă și mobil
+                </li>
+                <li>
+                  <strong>Performanță și optimizare:</strong> încărcare rapidă
+                  și experiență fluidă pentru utilizatori
+                </li>
+                <li>
+                  <strong>Comunicare client-server:</strong> schimb de date prin
+                  API-uri
+                </li>
+                <li>
+                  <strong>Scalabilitate:</strong> aplicații care pot susține un
+                  număr mare de utilizatori
+                </li>
+                <li>
+                  <strong>Utilizarea tehnologiilor moderne:</strong> HTML, CSS,
+                  JavaScript și framework-uri populare
+                </li>
+                <li>
+                  <strong>Compatibilitate cross-browser:</strong> funcționare
+                  corectă pe toate browserele importante
+                </li>
+                <li>
+                  <strong>Deployment și mentenanță continuă:</strong> publicare
+                  și actualizare constantă a aplicației
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
-        <section class="video">
-          <div class="title-wrapper">
-            <h3>
-              Te pasionează? Urmărește următorul webinar pentru mai multe
-              detalii!
-            </h3>
+        </div>
+      </section>
+      <!-- End sectiune detalii curs -->
+      <!-- Sectiune tehnologii -->
+      <section class="technologies">
+        <div class="container">
+          <h2>Ce tehnologii vei studia</h2>
+          <div class="technologies-container">
+            <div class="image-wrapper">
+              <a href="https://www.w3schools.com/html/" target="_blank"
+                ><img src="../../img/html-logo.png" alt="HTML"
+              /></a>
+            </div>
+
+            <div class="image-wrapper">
+              <a href="https://www.w3schools.com/Css/" target="_blank"
+                ><img src="../../img/css-logo.png" alt="CSS"
+              /></a>
+            </div>
+
+            <div class="image-wrapper">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                ><img src="../../img/javascript-logo.png" alt="JavaScript"
+              /></a>
+            </div>
+
+            <div class="image-wrapper">
+              <a
+                href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+                target="_blank"
+                ><img src="../../img/bootstrap-logo.png" alt="Bootstrap"
+              /></a>
+            </div>
+
+            <div class="image-wrapper">
+              <a href="https://react.dev/" target="_blank"
+                ><img src="../../img/react-logo.png" alt="React"
+              /></a>
+            </div>
+
+            <div class="image-wrapper">
+              <a href="https://git-scm.com/" target="_blank"
+                ><img src="../../img/git-logo.svg" alt="Git"
+              /></a>
+            </div>
           </div>
-          <div class="video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/jggNhR1hQ_8?si=cggsPSSjnImJ1FcN"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="enrollment">
-          <p>
-            <strong>Ești pregătit? Înscrie-te acum!</strong> Poți face o
-            programare la numărul de telefon
-            <strong
-              ><a class="phone-number" href="tel:00755957235"
-                >+40755957235</a
-              > </strong
-            >sau ne poți lăsa un mesaj prin pagina de
-            <strong
-              ><a class="phone-number" href="../contact.html"
-                >Contact</a
-              ></strong
-            >, iar noi te vom suna în cel mai scurt timp. Atât tariful, cât și
-            celelalte detalii vor fi comunicate și discutate în cadrul
-            programării.
-          </p>
-        </section>
-      </div>
+        </div>
+      </section>
+      <!-- End Sectiune tehnologii -->
+      <!-- Sectiune inscriere -->
+      <section class="enrollment">
+        <p>
+          <strong>Ești pregătit? Nu mai sta pe gânduri!</strong> Poți face chiar
+          acum o programare la numărul de telefon
+          <strong
+            ><a class="phone-number" href="tel:00755957235"
+              >+40755957235</a
+            > </strong
+          >sau ne poți lăsa un mesaj prin pagina de
+          <strong
+            ><a class="phone-number" href="../contact.html">Contact</a></strong
+          >, iar noi te vom suna în cel mai scurt timp. Atât tariful, cât și
+          celelalte detalii vor fi comunicate și discutate în cadrul
+          programării.
+        </p>
+      </section>
+      <!-- End Sectiune inscriere -->
     </main>
     <footer>
       <div class="container">
-        <p>It School Romania 2025. Toate drepturile rezervate.</p>
+        <p>
+          <a href="./pages/contact.html"
+            >Ești pregătit de aventură? <strong>Înscrie-te acum</strong></a
+          >
+        </p>
+        <p>It School Romania ©2025. Toate drepturile rezervate.</p>
       </div>
     </footer>
   </body>

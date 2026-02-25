@@ -1,3 +1,4 @@
+/* Sectiune welcome */
 .welcome {
   background-color: var(--bg-primary);
   height: 30vh;
@@ -10,21 +11,16 @@
   text-align: center;
 }
 
+/* Sectiune welcome - responsive */
 @media (max-width: 768px) {
   .welcome h1 {
     font-size: 32px;
   }
 }
 
+/* Sectiune cursuri */
 .courses .container.grid p.main-paragraph {
-  padding: var(--spacing-medium) var(--spacing-small);
-  font-size: var(--fs-large);
-}
-
-.courses .container.grid p.main-paragraph {
-  margin-left: var(--spacing-small);
-  margin-right: var(--spacing-small);
-  margin-bottom: var(--spacing-small);
+  margin: var(--spacing-medium);
 }
 
 .courses h2 {
@@ -58,26 +54,27 @@
 
 .courses .presentation-image {
   width: 100%;
-  height: auto;
+  height: 250px;
   margin-bottom: var(--spacing-large);
-  height: 200px;
 }
 
 .courses h3 {
   color: var(--text-primary);
 }
 
-.courses .microsoft-logo, .courses .minister-color-logo{
+.courses .microsoft-logo,
+.courses .minister-color-logo {
   width: 80px;
   height: auto;
   vertical-align: middle;
-  margin-right:var(--spacing-tiny);
+  margin-right: var(--spacing-tiny);
 }
-.courses .adobe-logo, .courses .apple-logo{
+.courses .adobe-logo,
+.courses .apple-logo {
   width: 30px;
   height: auto;
   vertical-align: middle;
-  margin-right:var(--spacing-tiny);
+  margin-right: var(--spacing-tiny);
 }
 
 .courses span,
@@ -112,7 +109,7 @@
   width: 100px;
 }
 
-.courses a:hover{
+.courses a:hover {
   opacity: 90%;
 }
 
@@ -124,6 +121,7 @@
   margin-left: var(--spacing-small);
 }
 
+/* Sectiune Cursuri - responsive */
 @media (max-width: 992px) {
   .courses .course-wrapper {
     width: 50%;

@@ -66,8 +66,16 @@
   margin-bottom: var(--spacing-medium);
 }
 
+.certification img {
+  margin: var(--spacing-small);
+}
+
 .certification .apple-logo {
   width: 80px;
+}
+
+.certification .adobe-logo {
+  width: 60px;
 }
 
 .certification .minister-color-logo {
@@ -75,7 +83,8 @@
 }
 
 .certification .apple-logo,
-.certification .minister-color-logo {
+.certification .minister-color-logo,
+.certification .adobe-logo {
   height: auto;
 }
 
@@ -87,7 +96,7 @@
 
 .trainer img {
   margin-top: var(--spacing-large);
-  height: auto;
+  height: 150px;
   border-radius: 100%;
 }
 
@@ -112,14 +121,15 @@
   list-style-type: circle;
 }
 
-.course-list ul li{
-  padding:var(--spacing-tiny);
+.course-list ul li {
+  padding: var(--spacing-tiny);
 }
 
-.course-list h2{
-  margin-top:calc(2*var(--spacing-medium));
-  margin-bottom:var(--spacing-medium);
+.course-list h2 {
+  margin-top: calc(2 * var(--spacing-medium));
+  margin-bottom: var(--spacing-medium);
 }
+
 /* Sectiune Tehnologii */
 .technologies h2 {
   text-align: center;
@@ -130,6 +140,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .technologies .image-wrapper {
@@ -155,14 +166,15 @@
 .enrollment p {
   font-size: var(--fs-large);
   text-align: center;
-  width:80%;
+  width: 80%;
   margin: 0 auto;
   padding: var(--spacing-large);
 }
 
 @media (max-width: 768px) {
   .course-details,
-  .card, .description{
+  .card,
+  .description {
     flex-direction: column;
   }
 
@@ -176,18 +188,18 @@
   }
 
   .course-list ul {
-    margin-left:var(--spacing-medium);
+    margin-left: var(--spacing-medium);
   }
 
-  .description{
-    text-align:center;
+  .description {
+    text-align: center;
   }
 
-  .certification{
-    padding:var(--spacing-medium);
+  .certification {
+    padding: var(--spacing-medium);
   }
-  
-  .technologies .image-wrapper{
-    width:50px;
+
+  .technologies .image-wrapper {
+    width: 50px;
   }
 }

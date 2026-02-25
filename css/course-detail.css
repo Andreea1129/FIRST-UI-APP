@@ -25,122 +25,79 @@
   }
 }
 
+/* Sectiune Detalii Curs */
 .course-details {
-  display: flex;
   margin-top: var(--spacing-large);
   gap: var(--spacing-medium);
 }
 
 .course-img {
   width: 30%;
-  margin-right: var(--spacing-medium);
-  margin-top: calc(3 * var(--spacing-large));
+  margin: calc(2 * var(--spacing-small)) var(--spacing-small);
 }
 
 .course-img img {
   width: 100%;
   height: auto;
-  margin-bottom: var(--spacing-large);
 }
 
 .course-content {
-  width: 70%;
-  font-size: var(--fs-medium);
-  color: var(--text-primary);
+  width: 100%;
 }
 
-.course-content ul {
-  list-style-type: circle;
-  margin: var(--spacing-medium);
-}
-
-.course-content p:first-of-type {
-  margin-bottom: var(--spacing-medium);
-}
-
-@media (max-width: 768px) {
-  .course-details,
-  .video {
-    flex-direction: column;
-  }
-
-  .course-img,
-  .course-content,
-  iframe {
-    width: 100%;
-  }
-
-  .course-img img {
-    margin-bottom: var(--spacing-medium);
-  }
-
-  .course-img {
-    margin-top: var(--spacing-medium);
-  }
-}
-
-.certification .microsoft-logo {
-  width: 80px;
-  height: auto;
-  vertical-align: middle;
-}
-
-.course-content .content h3 {
-  text-align: center;
-  margin-top: var(--spacing-medium);
-  margin-bottom: var(--spacing-medium);
-  color: var(--text-dark);
-}
-
-.course-content p:nth-of-type(2) {
-  color: var(--text-primary);
-  font-weight: bold;
-  font-size: var(--fs-large);
-}
-
-.video h3 {
-  font-weight: 100;
-  text-align: center;
-  padding: 5px 10px;
-  color: var(--text-light);
-}
-
-.video .title-wrapper {
+.course-content .description {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: var(--spacing-large);
-  border: 1px solid var(--bg-primary);
-  border-radius: 10px;
-  background-color: var(--bg-primary);
-  height: 200px;
-  align-self: center;
+  margin-bottom: var(--spacing-medium);
 }
 
-.video .title-wrapper h3:hover {
-  color: var(--text-secondary);
-}
-.video {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--spacing-large);
-}
-
-.enrollment a {
-  display: inline;
-  color: var(--text-secondary);
-}
-
-.enrollment p {
+.course-content .description p {
   font-size: var(--fs-large);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card .certification {
+  margin-bottom: var(--spacing-medium);
+}
+
+.certification .apple-logo {
+  width: 80px;
+}
+
+.certification .minister-color-logo {
+  width: 160px;
+}
+
+.certification .apple-logo,
+.certification .minister-color-logo {
+  height: auto;
+}
+
+.card .info-card h4 {
+  font-style: italic;
+  color: var(--text-primary);
+  padding: var(--spacing-small);
+}
+
+.trainer img {
   margin-top: var(--spacing-large);
-  margin-bottom: var(--spacing-large);
+  height: auto;
+  border-radius: 100%;
+}
+
+.trainer h4 {
   text-align: center;
 }
 
 .course-content .card {
   margin-top: var(--spacing-medium);
-  margin-bottom: var(--spacing-medium);
+  margin-bottom: var(--spacing-large);
   border-radius: 1px solid var(--bg-primary);
   background-color: var(--bg-secondary);
   padding: 10px;
@@ -149,4 +106,88 @@
 
 .card .details .material-symbols-outlined {
   vertical-align: middle;
+}
+
+.course-list ul {
+  list-style-type: circle;
+}
+
+.course-list ul li{
+  padding:var(--spacing-tiny);
+}
+
+.course-list h2{
+  margin-top:calc(2*var(--spacing-medium));
+  margin-bottom:var(--spacing-medium);
+}
+/* Sectiune Tehnologii */
+.technologies h2 {
+  text-align: center;
+  margin-bottom: calc(3 * var(--spacing-medium));
+}
+
+.technologies .technologies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.technologies .image-wrapper {
+  width: 70px;
+}
+
+.technologies img {
+  width: 100%;
+  height: auto;
+}
+
+.technologies img:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+/* Sectiune inscriere */
+.enrollment a {
+  display: inline;
+  color: var(--text-secondary);
+}
+
+.enrollment p {
+  font-size: var(--fs-large);
+  text-align: center;
+  width:80%;
+  margin: 0 auto;
+  padding: var(--spacing-large);
+}
+
+@media (max-width: 768px) {
+  .course-details,
+  .card, .description{
+    flex-direction: column;
+  }
+
+  .course-img,
+  .course-content {
+    width: 100%;
+  }
+
+  .course-img img {
+    margin: var(--spacing-small);
+  }
+
+  .course-list ul {
+    margin-left:var(--spacing-medium);
+  }
+
+  .description{
+    text-align:center;
+  }
+
+  .certification{
+    padding:var(--spacing-medium);
+  }
+  
+  .technologies .image-wrapper{
+    width:50px;
+  }
 }

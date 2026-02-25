@@ -1,5 +1,8 @@
+/* Sectiune welcome */
 .welcome {
-  background-color: var(--bg-primary);
+  background-image: url("../img/welcome-background.png");
+  background-size: cover;
+  background-position: 3px;
   height: 30vh;
   display: flex;
   justify-content: center;
@@ -10,12 +13,14 @@
   text-align: center;
 }
 
+/* Sectiune welcome responsive */
 @media (max-width: 768px) {
   .welcome h1 {
     font-size: 23px;
   }
 }
 
+/* Sectiune contact */
 .contact h2 {
   text-align: center;
   padding-top: var(--spacing-large);
@@ -114,6 +119,7 @@
   transform: scale(1.1);
 }
 
+/* Sectiune Contact responsive */
 @media (max-width: 768px) {
   .contact .content-wrapper {
     flex-direction: column;

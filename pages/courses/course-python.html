@@ -1,27 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>💻Python</title>
+    <title>Python</title>
     <!-- Adaugam meta tag-urile pentru SEO -->
     <meta
       name="description"
       content="Prima aplicatie de UI folosind doar HTML si CSS"
     />
-    <!-- Includem font-urile de la google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <!-- Includem iconitele tot de la Google: Material Icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
       rel="stylesheet"
     />
-    <!-- Includem CSS-urile noastre -->
     <link rel="stylesheet" href="../../css/main.css" />
     <link rel="stylesheet" href="../../css/course-detail.css" />
   </head>
@@ -41,7 +38,6 @@
               <li class="about-us">
                 <a href="../about.html"
                   >Despre Noi
-                  <!-- Inseram iconita de arrow down de pe Material Icons -->
                   <span class="material-symbols-outlined arrow-down-icon">
                     arrow_drop_down
                   </span>
@@ -59,6 +55,7 @@
       </nav>
     </header>
     <main>
+      <!-- Sectiune welcome -->
       <section class="welcome">
         <div class="container">
           <h1>Programare Python</h1>
@@ -68,39 +65,45 @@
           </h2>
         </div>
       </section>
-      <div class="container">
-        <section class="course-details">
-          <div class="course-img">
-            <img src="../../img/python.jpeg" alt="Python Logo" />
-            <img src="../../img/course-python-page.jpg" alt="Python" />
-          </div>
+      <!-- End Sectiune welcome -->
+      <!-- Sectiune detalii curs-->
+      <section class="course-details">
+        <div class="container">
           <div class="course-content">
-            <div class="content">
-              <h3>Învață Python Ușor și Rapid</h3>
-            </div>
-            <p>
-              <i>
-                Programarea în Python se referă la scrierea de cod utilizând
-                limbajul Python, un limbaj de programare de nivel înalt,
-                interpretat, cu o sintaxă simplă, intuitivă și orientată pe
-                obiecte, perfect pentru începători și profesioniști. Este
-                versatil, folosit pentru dezvoltare web, inteligență
-                artificială, analiză de date, robotică și multe altele, datorită
-                flexibilității și a unei biblioteci standard bogate. Datorită
-                naturii sale open-source și suportului puternic al comunității,
-                Python este un limbaj aflat în continuă dezvoltare și foarte
-                popular la nivel global.</i
-              >
-            </p>
-            <div class="card">
-              <p class="certification">
-                Certificare:
-                <img
-                  src="../../img/microsoft-color.png"
-                  alt="Microsoft"
-                  class="microsoft-logo"
-                />
+            <div class="description">
+              <img
+                src="../../img/course-python.jpg"
+                alt="Python"
+                class="course-img"
+              />
+              <p>
+                <i>
+                  Programarea în Python se referă la scrierea de cod utilizând
+                  limbajul Python, un limbaj de programare de nivel înalt,
+                  interpretat, cu o sintaxă simplă, intuitivă și orientată pe
+                  obiecte, perfect pentru începători și profesioniști. Este
+                  versatil, folosit pentru dezvoltare web, inteligență
+                  artificială, analiză de date, robotică și multe altele,
+                  datorită flexibilității și a unei biblioteci standard bogate.
+                  Datorită naturii sale open-source și suportului puternic al
+                  comunității, Python este un limbaj aflat în continuă
+                  dezvoltare și foarte popular la nivel global.</i
+                >
               </p>
+            </div>
+            <div class="card">
+              <div class="certification">
+                <img
+                  src="../../img/minister-color.png"
+                  alt="Ministerul Educatiei"
+                  class="minister-color-logo"
+                />
+                <img
+                  src="../../img/apple-black.png"
+                  alt="Apple"
+                  class="apple-logo"
+                />
+              </div>
               <div class="details">
                 <span class="date">
                   <span class="material-symbols-outlined"> today </span>
@@ -120,87 +123,120 @@
                   <span class="material-symbols-outlined"> euro_symbol </span>
                   <span>952</span>
                 </span>
+                <h4>Ofertă de primăvară -10%</h4>
+              </div>
+              <div class="trainer">
+                <img src="../../img/madalin.jpg" alt="Mădălin Fășie" />
+                <h4>Mădălin Fășie</h4>
               </div>
             </div>
-            <p>Caracteristici cheie:</p>
-            <ul>
-              <li>
-                <strong>Simplitate și lizibilitate:</strong> Python are o
-                sintaxă curată, asemănătoare limbajului uman, ceea ce îl face
-                ușor de învățat și de citit.
-              </li>
-              <li>
-                <strong>Interpretat:</strong> Codul Python este executat direct
-                de un interpretor, linie cu linie, eliminând necesitatea unui
-                pas de compilare prealabil.
-              </li>
-              <li>
-                <strong>Multi-paradigmă:</strong> Suportă diferite stiluri de
-                programare, inclusiv programarea orientată pe obiecte,
-                funcțională și procedurală.
-              </li>
-              <li>
-                <strong>Open-source:</strong> Fiind un proiect open-source,
-                comunitatea de dezvoltatori contribuie continuu la dezvoltarea
-                și îmbunătățirea limbajului.
-              </li>
-              <li>
-                <strong>Portabilitate:</strong> Codul Python poate fi rulat pe
-                diverse sisteme de operare (Windows, Linux, macOS) fără
-                modificări.
-              </li>
-              <li>
-                <strong>Bibliotecă standard bogată:</strong> Include o
-                multitudine de module predefinite pentru diverse sarcini, cum ar
-                fi lucrul cu sistemul de operare, operații matematice sau
-                generarea de numere aleatoare.
-              </li>
-            </ul>
+
+            <div class="course-list">
+              <h2>Caracteristici cheie:</h2>
+              <ul>
+                <li>
+                  <strong>Simplitate și lizibilitate:</strong> Python are o
+                  sintaxă curată, asemănătoare limbajului uman, ceea ce îl face
+                  ușor de învățat și de citit.
+                </li>
+                <li>
+                  <strong>Interpretat:</strong> Codul Python este executat
+                  direct de un interpretor, linie cu linie, eliminând
+                  necesitatea unui pas de compilare prealabil.
+                </li>
+                <li>
+                  <strong>Multi-paradigmă:</strong> Suportă diferite stiluri de
+                  programare, inclusiv programarea orientată pe obiecte,
+                  funcțională și procedurală.
+                </li>
+                <li>
+                  <strong>Open-source:</strong> Fiind un proiect open-source,
+                  comunitatea de dezvoltatori contribuie continuu la dezvoltarea
+                  și îmbunătățirea limbajului.
+                </li>
+                <li>
+                  <strong>Portabilitate:</strong> Codul Python poate fi rulat pe
+                  diverse sisteme de operare (Windows, Linux, macOS) fără
+                  modificări.
+                </li>
+                <li>
+                  <strong>Bibliotecă standard bogată:</strong> Include o
+                  multitudine de module predefinite pentru diverse sarcini, cum
+                  ar fi lucrul cu sistemul de operare, operații matematice sau
+                  generarea de numere aleatoare.
+                </li>
+              </ul>
+            </div>
           </div>
-        </section>
-        <section class="video">
-          <div class="title-wrapper">
-            <h3>
-              Dacă ești curios și vrei să afli mai multe, totul e la doar un
-              click distanță!
-            </h3>
+        </div>
+      </section>
+      <!-- End sectiune detalii curs -->
+      <!-- Sectiune tehnologii -->
+      <section class="technologies">
+        <div class="container">
+          <h2>Ce tehnologii vei studia</h2>
+          <div class="technologies-container">
+            <div class="image-wrapper">
+              <a href="https://www.python.org/" target="_blank"
+                ><img src="../../img/python-logo.webp" alt="Python"
+              /></a>
+            </div>
+
+            <div class="image-wrapper">
+              <a href="https://git-scm.com/" target="_blank"
+                ><img src="../../img/git-logo.svg" alt="Git"
+              /></a>
+            </div>
+
+            <div class="image-wrapper">
+              <a href="https://www.djangoproject.com/" target="_blank"
+                ><img src="../../img/django-logo.svg" alt="Django"
+              /></a>
+            </div>
+
+            <div class="image-wrapper">
+              <a
+                href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads"
+                target="_blank"
+                ><img src="../../img/sql-logo.svg" alt="SQL"
+              /></a>
+            </div>
+            <div class="image-wrapper">
+              <a href="https://openai.com/ro-RO/" target="_blank"
+                ><img src="../../img/openai-logo.png" alt="OpenAI"
+              /></a>
+            </div>
           </div>
-          <div class="video-wrapper">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/1vLY6-RA_bk?si=rCM4jRGmgTgez_i7"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-        <section class="enrollment">
-          <p>
-            <strong>Ești pregătit? Înscrie-te acum!</strong> Poți face o
-            programare la numărul de telefon
-            <strong
-              ><a class="phone-number" href="tel:00755957235"
-                >+40755957235</a
-              > </strong
-            >sau ne poți lăsa un mesaj prin pagina de
-            <strong
-              ><a class="phone-number" href="../contact.html"
-                >Contact</a
-              ></strong
-            >, iar noi te vom suna în cel mai scurt timp. Atât tariful, cât și
-            celelalte detalii vor fi comunicate și discutate în cadrul
-            programării.
-          </p>
-        </section>
-      </div>
+        </div>
+      </section>
+      <!-- End Sectiune tehnologii -->
+      <!-- Sectiune inscriere -->
+      <section class="enrollment">
+        <p>
+          <strong>Ești pregătit? Nu mai sta pe gânduri!</strong> Poți face chiar
+          acum o programare la numărul de telefon
+          <strong
+            ><a class="phone-number" href="tel:00755957235"
+              >+40755957235</a
+            > </strong
+          >sau ne poți lăsa un mesaj prin pagina de
+          <strong
+            ><a class="phone-number" href="../contact.html">Contact</a></strong
+          >, iar noi te vom suna în cel mai scurt timp. Atât tariful, cât și
+          celelalte detalii vor fi comunicate și discutate în cadrul
+          programării.
+        </p>
+      </section>
+      <!-- End Sectiune inscriere -->
     </main>
     <footer>
       <div class="container">
-        <p>It School Romania 2025. Toate drepturile rezervate.</p>
+        <p>
+          <a href="./pages/contact.html"
+            >Ești pregătit de aventură? <strong>Înscrie-te acum</strong></a
+          >
+        </p>
+        <p>It School Romania ©2025. Toate drepturile rezervate.</p>
       </div>
     </footer>
   </body>

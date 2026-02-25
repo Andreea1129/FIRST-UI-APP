@@ -1,3 +1,4 @@
+/* Stilizare sectiune welcome */
 .welcome {
   background-color: var(--bg-primary);
   height: 30vh;
@@ -19,6 +20,7 @@
   color: rgb(57, 226, 136);
 }
 
+/* Stilizare sectiune welcome responsive */
 @media (max-width: 768px) {
   .welcome h1 {
     font-size: 32px;
@@ -72,20 +74,22 @@
 
 .certification .apple-logo {
   width: 80px;
+  height: 70px;
 }
 
 .certification .adobe-logo {
   width: 60px;
+  height: 60px;
 }
 
 .certification .minister-color-logo {
   width: 160px;
+  height: 70px;
 }
 
-.certification .apple-logo,
-.certification .minister-color-logo,
-.certification .adobe-logo {
-  height: auto;
+.certification .microsoft-logo {
+  width: 200px;
+  height: 60px;
 }
 
 .card .info-card h4 {
@@ -171,6 +175,7 @@
   padding: var(--spacing-large);
 }
 
+/* Layout responsive */
 @media (max-width: 768px) {
   .course-details,
   .card,

@@ -1,3 +1,4 @@
+/* Sectiune welcome */
 .welcome {
   background-color: var(--bg-primary);
   height: 30vh;
@@ -10,18 +11,21 @@
   text-align: center;
 }
 
+/* Sectiune welcome responsive */
 @media (max-width: 768px) {
   .welcome h1 {
     font-size: 32px;
   }
 }
 
+/* Sectiune Intro */
 .intro-trainers {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .intro-trainers .container {
   background-color: var(--bg-secondary);
   margin: var(--spacing-large);
@@ -29,8 +33,8 @@
 
 .intro-trainers .container img {
   margin: var(--spacing-medium);
-  width: 500px;
-  height: 300px;
+  width: 40%;
+  height: auto;
 }
 
 .intro-trainers h3 {
@@ -43,6 +47,29 @@
   justify-content: space-evenly;
 }
 
+/* Sectiune responsive Intro */
+@media (max-width: 576px) {
+  .intro-trainers .container {
+    height: auto;
+    width: 90%;
+    margin-left: calc(var(--spacing-large));
+    margin-right: calc(var(--spacing-large));
+  }
+
+  .intro-trainers .trainers-pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-trainers .trainers-pictures img {
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+}
+
+/* Sectiune Traineri */
 .trainers h2 {
   text-align: center;
   margin: var(--spacing-medium);
@@ -108,6 +135,7 @@
   padding: 0 var(--spacing-small);
 }
 
+/* Sectiune responsive Traineri */
 @media (max-width: 992px) {
   .trainers .trainer-wrapper {
     width: calc(100% / 3);
@@ -141,6 +169,7 @@
   }
 }
 
+/* Sectiune De ce trainerii nostri */
 .why-our-trainers .container {
   display: flex;
   flex-direction: row;
@@ -149,12 +178,31 @@
   margin-bottom: var(--spacing-large);
 }
 
-.why-our-trainers .container .trainers-about-page {
-  width: 500px;
-  height: 300px;
+.why-our-trainers .container img {
+  width: 40%;
+  height: auto;
 }
 
 .why-our-trainers h3,
 .why-our-trainers p {
   margin: var(--spacing-large);
+}
+
+/* Sectiune responsive trainerii nostri */
+@media (max-width: 576px) {
+  .why-our-trainers .container {
+    height: auto;
+    width: 90%;
+    margin-left: calc(var(--spacing-large));
+    margin-right: calc(var(--spacing-large));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-our-trainers .container img {
+    width: 100% !important;
+    height: auto;
+    display: block;
+  }
 }

@@ -48,4 +48,4 @@ The website is responsive. Media queries are used to adjust:
 - Typography sizing
 
 # 🌐 LIVE DEMO:
-- Netlify:
+- Netlify: https://andreea-ui-app.netlify.app/

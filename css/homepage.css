@@ -296,19 +296,19 @@
 /* Stilizare responsive Sectiune Testimoniale */
 @media (max-width: 992px) {
   .testimoniale .absolvent-wrapper {
-    width: calc(100% / 3);
+    width: 70%;
   }
 }
 
 @media (max-width: 768px) {
   .testimoniale .absolvent-wrapper {
-    width: 50%;
+    width: 80%;
   }
 }
 
 @media (max-width: 576px) {
   .testimoniale .absolvent-wrapper {
-    width: 100%;
+    width: 90%;
   }
   .testimoniale .absolvent {
     height: auto;

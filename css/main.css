@@ -154,6 +154,7 @@ nav ul {
 nav ul li {
   position: relative;
 }
+
 /* Ascundem by default submeniul */
 nav .submenu {
   display: none;
@@ -206,7 +207,7 @@ nav .submenu a {
     /* schimbam modul de afisare a cursorului  */
     cursor: pointer;
   }
-  /* input:checked ~ ul -> inseamna ca aplica css-ul doar pentru fratii de tip ul de pe acelasi nivel cu input-ul */
+
   nav input[type="checkbox"]:checked ~ ul {
     display: block;
     width: 100%;
@@ -228,9 +229,10 @@ footer {
   background-color: var(--bg-dark);
 }
 
-footer p {
+footer p,
+footer a {
   color: var(--text-light);
   text-align: center;
   font-size: var(--fs-medium);
-  padding: var(--spacing-medium) 0;
+  padding: var(--spacing-small) 0;
 }
